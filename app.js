@@ -45,6 +45,7 @@ app.get('/', function(req, res) {
 });
 app.get('/post/:id', function(req, res) {
   Post.findById(req.params.id, function(err, post) {
+    console.log(post)
     res.render('post', { post: post });
   })
 })
