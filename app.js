@@ -63,7 +63,7 @@ app.post('/create', function(req, res) {
     // broadcast new post
     list.emit('post.new', p)
     
-    res.write('{ success: true }');
+    res.write('{ success: true, post_id: "' + p._id + '" }');
     res.end();
   })
 })
