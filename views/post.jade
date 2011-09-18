@@ -1,0 +1,12 @@
+script(type='text/javascript',src='/javascripts/post.js')
+script
+  var post_id = '#{post._id}';
+  var plat = #{post.lat};
+  var plng = #{post.lng};
+a(href='/') back
+h1=post.title
+p=post.description
+p#distance
+button.clean-gray#confirm confirm
+br
+button.clean-gray#deny deny

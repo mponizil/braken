@@ -1,0 +1,18 @@
+script(type='text/javascript',src='/javascripts/create.js')
+a(href='/') back
+form#new_post(name='new_post')
+  table
+    tr
+      td Title
+      td
+        input(type='text',name='title')
+    tr
+      td Description
+      td
+        input(type='text',name='description')
+    tr
+      td(colspan="2")
+        | map
+  button.clean-gray cancel
+  br
+  button.clean-gray submit
